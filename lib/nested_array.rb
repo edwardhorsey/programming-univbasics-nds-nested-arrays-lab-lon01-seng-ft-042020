@@ -25,20 +25,24 @@ assembled = [
   CONVENTIONAL_PRODUCE,
   ORGANIC_PRODUCE,
   ]
-  assembled
+
+assembled
 end
 
 def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
-  assembled = [
-  CONVENTIONAL_PRODUCE,
-  ORGANIC_PRODUCE,
+
+  sortedcon = CONVENTIONAL_PRODUCE.sort
+  sortedorg = ORGANIC_PRODUCE.sort
+  
+assembled = [
+  sortedcon,
+  sortedorg
   ]
-  assembled
   
-  
+assembled
 end
 
 def matrix_lookup(matrix, row, column)
